@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="API_KEY">YOUR THEMOVIEDB.ORG API KEY GOES HERE</string>
+    <string name="imageSize">w185</string>
+    <string name="top_movie_description">Top Movies</string>
+    <string name="BASE_URL">http://api.themoviedb.org</string>
+    <string name="placeholder">placeholder</string>
+    <string name="title">The War for the Planet of the Apes</string>
+    <string name="releaseDate">Released</string>
+    <string name="releaseDateSample">24 Sep 2014</string>
+    <string name="voteLabel">Votes</string>
+    <string name="vote">100.00</string>
+    <string name="synopsis">Believing they have left behind shadowy figures from their past, newlyweds Christian and Ana fully embrace an inextricable connection and shared life of luxury. But just as she steps into her role as Mrs. Grey and he relaxes into an unfamiliar stability, new threats could jeopardize their happy ending before it even begins.</string>
+    <string name="action_settings">Settings</string>
+    <string name="movieOrder">movieOrder</string>
+    <string name="PreferenceListTitle">Movie List Type</string>
+</resources>

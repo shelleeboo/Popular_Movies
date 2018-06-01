@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="MovieData">
+        <item>popular</item>
+        <item>top_rated</item>
+    </string-array>
+    <string-array name="Movie">
+        <item>Most Popular</item>
+        <item>Top Rated</item>
+    </string-array>
+</resources>

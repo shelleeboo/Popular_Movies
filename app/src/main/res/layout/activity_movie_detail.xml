@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="io.shellee.movies.ui.details.MovieDetailActivity">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/activity_movies_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backdrop_iv"
+                android:contentDescription="@string/placeholder"
+                app:layout_constraintBottom_toBottomOf="@+id/poster_iv"
+                app:layout_constraintLeft_toLeftOf="@+id/activity_movies_detail"
+                app:layout_constraintRight_toRightOf="@+id/activity_movies_detail"
+                app:layout_constraintTop_toTopOf="@+id/activity_movies_detail"
+                app:layout_constraintHorizontal_bias="1.0"
+                tools:src="@drawable/free"
+                style="@style/backdropImage" />
+
+            <ImageView
+                android:id="@+id/poster_iv"
+                android:contentDescription="@string/placeholder"
+                app:layout_constraintBottom_toBottomOf="@+id/activity_movies_detail"
+                app:layout_constraintLeft_toLeftOf="@+id/activity_movies_detail"
+                app:layout_constraintTop_toTopOf="@+id/activity_movies_detail"
+                app:layout_constraintVertical_bias="0.19"
+                tools:src="@drawable/free"
+                style="@style/posterImage" />
+
+            <TextView
+                android:id="@+id/title"
+                android:text="@string/title"
+                app:layout_constraintLeft_toLeftOf="@+id/activity_movies_detail"
+                app:layout_constraintTop_toBottomOf="@+id/poster_iv"
+                style="@style/title" />
+
+            <TextView
+                android:id="@+id/releaseDate"
+                app:layout_constraintLeft_toLeftOf="@+id/votes"
+                app:layout_constraintRight_toRightOf="@+id/votes"
+                app:layout_constraintStart_toEndOf="@+id/labelBarrier"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                tools:text="@string/releaseDateSample"
+                style="@style/featuredText" />
+
+            <TextView
+                android:id="@+id/releaseDateLabel"
+                android:text="@string/releaseDate"
+                app:layout_constraintBaseline_toBaselineOf="@+id/releaseDate"
+                app:layout_constraintLeft_toLeftOf="@+id/activity_movies_detail"
+                tools:text="@string/releaseDate"
+                style="@style/Labels" />
+
+            <TextView
+                android:id="@+id/votes"
+                app:layout_constraintRight_toRightOf="@+id/synopsis"
+                app:layout_constraintStart_toEndOf="@+id/labelBarrier"
+                app:layout_constraintTop_toBottomOf="@+id/releaseDate"
+                tools:text="@string/vote"
+                style="@style/featuredText" />
+
+            <TextView
+                android:id="@+id/voteLabel"
+                android:labelFor="@+id/votes"
+                android:text="@string/voteLabel"
+                app:layout_constraintBaseline_toBaselineOf="@+id/votes"
+                app:layout_constraintLeft_toLeftOf="@+id/activity_movies_detail"
+                style="@style/Labels"/>
+
+            <android.support.constraint.Barrier
+                android:id="@+id/labelBarrier"
+                app:barrierDirection="end"
+                app:constraint_referenced_ids="releaseDateLabel,voteLabel"
+                style="@style/barrier" />
+
+            <TextView
+                android:id="@+id/synopsis"
+                app:layout_constraintLeft_toLeftOf="@+id/activity_movies_detail"
+                app:layout_constraintRight_toRightOf="@+id/activity_movies_detail"
+                app:layout_constraintTop_toBottomOf="@+id/votes"
+                android:text="@string/synopsis"
+                style="@style/synopsis" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</layout>
